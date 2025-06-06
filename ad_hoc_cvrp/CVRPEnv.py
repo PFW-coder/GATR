@@ -120,7 +120,7 @@ class CVRPEnv:
         if (not self.FLAG__use_saved_problems) and (not self.FLAG__use_random_seed):
             depot_xy, node_xy, node_demand, agent_capacity, agent_speed = get_random_problems(batch_size, self.min_problem_size, self.max_problem_size, self.min_agent_num, self.max_agent_num)
         elif self.FLAG__use_random_seed:
-            depot_xy, node_xy, node_demand, agent_capacity, agent_speed = get_random_problems_normal(batch_size,
+            depot_xy, node_xy, node_demand, agent_capacity, agent_speed = get_random_problems(batch_size,
                                                                                               self.min_problem_size,
                                                                                               self.max_problem_size,
                                                                                               self.min_agent_num,
