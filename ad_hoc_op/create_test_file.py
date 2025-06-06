@@ -87,7 +87,7 @@ if __name__ == "__main__":
     list = []
 
     for i in range(110, 124):
-        filename = '/home/wanpf/workspace_macbook/ad-hoc-fleet/data/SZ_2023100' + str(i) + '.csv'
+        filename = '/ad-hoc-team/data/SZ_2023100' + str(i) + '.csv'
         created_file = "data/test_data_" + str(i) + ".pt"
         a = dbscan_test(filename, created_file)
         list.append(a)

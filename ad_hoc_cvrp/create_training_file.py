@@ -8,7 +8,7 @@ x_list = []
 y_list = []
 value_list = []
 for i in range(100, 110):
-    filename = '/ad-hoc-fleet/data/SZ_2023100' + str(i) + '.csv'
+    filename = '/ad-hoc-team/data/SZ_2023100' + str(i) + '.csv'
     data = pd.read_csv(filename)
     x = data['bd09mc_X'].values
     y = data['bd09mc_Y'].values

@@ -92,7 +92,7 @@ trainer_params = {
 logger_params = {
     'log_file': {
         # 'desc': 'train_cvrp_n20_no_context',
-        'desc': 'train_pdp_context_random_2',
+        'desc': 'train_pdp_context_random',
         'filename': 'run_log'
     }
 }

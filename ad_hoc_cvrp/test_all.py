@@ -57,7 +57,7 @@ tester_params = {
     'use_cuda': USE_CUDA,
     'cuda_device_num': CUDA_DEVICE_NUM,
     'model_load': {
-        'path': '/home/wanpf/workspace_macbook/ad-hoc-fleet/ad_hoc_cvrp/result/20250310_124358_train_cvrp_context',  # directory path of pre-trained model and log files saved.
+        'path': '/ad-hoc-team/ad_hoc_cvrp/result/20250310_124358_train_cvrp_context',  # directory path of pre-trained model and log files saved.
         'epoch': 0,  # epoch version of pre-trained model to load.
     },
     'test_episodes': 1000,
@@ -68,7 +68,7 @@ tester_params = {
     'aug_batch_size': 400,
     'test_data_load': {
         'enable': False,
-        'filename': '/home/wanpf/workspace_macbook/ad-hoc-fleet/ad_hoc_op/data/test_data'
+        'filename': '/ad-hoc-team/ad_hoc_op/data/test_data'
     },
 }
 if tester_params['augmentation_enable']:

@@ -98,8 +98,7 @@ class PDPTester:
                 self.logger.info(" *** Test Done *** ")
                 self.logger.info(" NO-AUG SCORE: {:.4f} ".format(score_AM.avg))
                 self.logger.info(" AUGMENTATION SCORE: {:.4f} ".format(aug_score_AM.avg))
-                return score_AM.avg, aug_score_AM.avg, [sum(score_AM_list[i:i+50]) / 50 for i in range(0, 1000, 50)], [sum(aug_score_AM_list[i:i+50]) / 50 for i in range(0, 1000, 50)]
-                # return score_AM.avg, aug_score_AM.avg
+                return score_AM.avg, aug_score_AM.avg
 
     def _test_one_batch(self, batch_size):
 

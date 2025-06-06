@@ -57,7 +57,7 @@ tester_params = {
     'use_cuda': USE_CUDA,
     'cuda_device_num': CUDA_DEVICE_NUM,
     'model_load': {
-        'path': '/home/wanpf/workspace_macbook/ad-hoc-fleet/ad_hoc_pdp/result/20250427_171056_train_pdp_context_random',  # directory path of pre-trained model and log files saved.
+        'path': '/ad-hoc-team/ad_hoc_pdp/result/20250427_171056_train_pdp_context_random',  # directory path of pre-trained model and log files saved.
         'epoch': 2000,  # epoch version of pre-trained model to load.
     },
     'test_episodes': 1000,
@@ -68,7 +68,7 @@ tester_params = {
     'aug_batch_size': 400,
     'test_data_load': {
         'enable': False,
-        'filename': '/home/wanpf/workspace_macbook/ad-hoc-fleet/ad_hoc_pdp/data/test_data.pt'
+        'filename': '/ad-hoc-team/ad_hoc_pdp/data/test_data.pt'
     },
 }
 if tester_params['augmentation_enable']:
@@ -99,17 +99,10 @@ def main():
                       model_params=model_params,
                       tester_params=tester_params)
 
-    # copy_all_src(tester.result_folder)
-    # no_aug_score, aug_score = tester.run()
-    # print('no_aug_score:', no_aug_score)
-    # print('aug_score:', aug_score)
-    # print('time', end_time - start_time)
-    no_aug_score, aug_score, _, __ = tester.run()
+    no_aug_score, aug_score = tester.run()
     print('no_aug_score:', -no_aug_score)
     print('aug_score:', -aug_score)
     print('time', end_time - start_time)
-    print(_)
-    print(__)
 
 
 def _set_debug_mode():
