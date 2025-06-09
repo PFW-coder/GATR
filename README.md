@@ -10,9 +10,11 @@ This is a deep reinforcement learning-based method that solves routing problems 
 Before reading our code, we strongly recommend reading the code of [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver), which is the basis of our code. 
 
 - To train a model, run train_vrp.py/train_op.py/train_pdp.py.
+  
 In the train_vrp.py/train_op.py/train_pdp.py files, environment, model, and training parameters can be modified. The parameters of environments include the scales of problems and teams. If you want to adjust specific team settings, please modify CVRPProblemDef.py/OPProblemDef.py/PDPProblemDef.py. When setting model parameters, 'context_decoder' and 'random_choice' are two optional modules; the former represents the information sharing process, and the latter represents the multi-starting-member technique.
 
 - To test a model, run test_vrp.py/test_op.py/test_pdp.py.
+  
 In the test_vrp.py/test_op.py/test_pdp.py files, environment, model, and test parameters can be modified. You can use 'test_data_load' to decide whether to test existing file data or randomly generated data. 
 
 - To test multiple models, run test_all.py. It can help you test all saved models and record results.
