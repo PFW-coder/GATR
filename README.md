@@ -1,4 +1,4 @@
-# Ad-hoc-team
+# GATR
 
 This is a deep reinforcement learning-based method that solves routing problems with the ad hoc team. We provide codes for three CO (combinatorial optimization) problems:
 - Capacitated Vehicle Routing Problem (CVRP), with the min-max arrival time objective, used for truck relief delivery.
