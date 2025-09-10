@@ -1,17 +1,17 @@
 # GATR
 
 This is a deep reinforcement learning-based method that solves routing problems with the ad hoc team. We provide codes for three CO (combinatorial optimization) problems:
-- Capacitated Vehicle Routing Problem (CVRP), with the min-max arrival time objective, used for truck relief delivery.
-- Team Orienteering Problem (TOP), with the maximum collected prize objective, used for UAV data collection.
-- Pickup and Delivery Problem (PDP), with the minimum average arrival time objective,  used for UAV medical delivery.
+- Capacitated Vehicle Routing Problem (CVRP), with the min-max arrival time objective, used for relief transportation. Team parameters include team size, member speed, and member capacity.
+- Team Orienteering Problem (TOP), with the maximum collected prize objective, used for disaster data collection. Team parameters include team size, member speed, and member endurance.
+- Pickup and Delivery Problem (PDP), with the minimum average arrival time objective, used for medical delivery. Team parameters include team size, member speed, and member endurance.
 
 ## Basic Usage
 
-Before reading our code, we strongly recommend reading the code of [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver), which is the basis of our code. 
+Before reading our code, we recommend reading the code of [POMO](https://github.com/yd-kwon/POMO/tree/master/NEW_py_ver), which is the basis of our code. 
 
 - To train a model, run train_vrp.py/train_op.py/train_pdp.py.
   
-In the train_vrp.py/train_op.py/train_pdp.py files, environment, model, and training parameters can be modified. The parameters of environments include the scales of problems and teams. If you want to adjust specific team settings, please modify CVRPProblemDef.py/OPProblemDef.py/PDPProblemDef.py. When setting model parameters, 'context_decoder' and 'random_choice' are two optional modules; the former represents the information sharing process, and the latter represents the multi-starting-member technique.
+In the train_vrp.py/train_op.py/train_pdp.py files, environment, model, and training parameters can be modified. The parameters of environments include the scales of problems and teams. If you want to adjust specific team settings, please modify CVRPProblemDef.py/OPProblemDef.py/PDPProblemDef.py. When setting model parameters, 'context_decoder' and 'random_choice' are two optional modules; the former represents the adaptive information sharing process, and the latter represents the multi-starting-member technique.
 
 - To test a model, run test_vrp.py/test_op.py/test_pdp.py.
   
