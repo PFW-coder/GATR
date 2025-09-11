@@ -30,7 +30,7 @@ In the test_vrp.py/test_op.py/test_pdp.py files, environment, model, and test pa
 
 ## Trained models
 
-The trained models for all related routing problems under different module choices are shown in the result folders. They can be directly used for decision-making or as pre-trained models. 
+The trained models for all related routing problems under different module choices are shown in the result folders. They can be directly used for decision-making or as pre-trained models. For each problem, we provided training models under different choices of modules 'context_decoder' and 'random_choice'.
 
 ## Dependencies
 
